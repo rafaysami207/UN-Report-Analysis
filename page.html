@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Corporate Complicity in Genocide – UN A/HRC/59/23 Deep-Dive</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style>
+:root{
+  --bg:#0f0f0f;
+  --card:#1a1a1a;
+  --accent:#ff3e3e;
+  --text:#f5f5f5;
+  --subtle:#888;
+  --border:#333;
+}
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+body{font-family:Inter,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+section.slide{width:100vw;min-height:100vh;padding:4rem;display:flex;align-items:center;justify-content:center}
+.card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:3rem 4rem;width:100%;max-width:1100px;box-shadow:0 20px 40px rgba(0,0,0,.6)}
+h1{font-size:3rem;font-weight:700;margin-bottom:.5rem}
+h2{font-size:2.2rem;font-weight:600;margin-bottom:1.5rem;color:var(--accent)}
+h3{font-size:1.3rem;font-weight:600;margin-bottom:.75rem}
+p,li{font-size:1.05rem;color:var(--subtle)}
+.grid{display:grid;gap:2rem}
+.cols-2{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+table{width:100%;border-collapse:collapse;margin:1rem 0}
+th,td{padding:.5rem .75rem;border-bottom:1px solid var(--border)}
+th{text-align:left;color:var(--accent)}
+.chart-container{height:260px;margin-top:1rem}
+.nav{position:fixed;right:1.5rem;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:.5rem;z-index:1000}
+.nav a{width:12px;height:12px;border-radius:50%;background:var(--border);transition:.3s}
+.nav a.active,.nav a:hover{background:var(--accent)}
+</style>
+</head>
+<body>
+
+<!-- Slide 1 ------------------------------------------------------------------->
+<section class="slide">
+  <div class="card" style="text-align:center">
+    <h1>Corporate Complicity in the Genocidal Economy</h1>
+    <p style="font-size:1.4rem;margin-top:.5rem">UN Special Rapporteur A/HRC/59/23 | July 2025</p>
+    <p style="margin-top:2rem">From the Economy of Occupation to the Economy of Genocide</p>
+  </div>
+</section>
+
+<!-- Slide 2 ------------------------------------------------------------------->
+<section class="slide">
+  <div class="card">
+    <h2>Executive Snapshot – Key Numbers</h2>
+    <div class="grid cols-2">
+      <div>
+        <ul>
+          <li><strong>1,000+</strong> corporate entities mapped</li>
+          <li><strong>45</strong> formally notified; <strong>15</strong> replied</li>
+          <li><strong>$157.9 B</strong> equity surge on Tel-Aviv bourse since 7 Oct 2023</li>
+          <li><strong>179,411+</strong> Palestinians killed or injured (as at 5 Jun 2025)</li>
+          <li><strong>2 million</strong> forcibly displaced</li>
+          <li><strong>70 %</strong> of Gaza’s structures damaged/destroyed</li>
+        </ul>
+      </div>
+      <div class="chart-container">
+        <canvas id="casualtyChart"></canvas>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Slide 3 ----------------------------------------------------- MILITARY ----- -->
+<section class="slide">
+  <div class="card">
+    <h2>1. Military-Industrial Complex – Weaponising Genocide</h2>
+    <table>
+      <thead><tr><th>Company & HQ</th><th>Key Hardware / Service</th><th>2024 Revenue</th><th>Role in Gaza</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Lockheed Martin</strong> (US)</td><td>F-35I “Adir”, 2,000-lb JDAMs</td><td>$67 B</td><td>85,000 t bombs dropped since Oct-23</td></tr>
+        <tr><td><strong>Elbit Systems</strong> (IL)</td><td>Hermes drones, Iron-Fist APS</td><td>$6 B (↑ 65 %)</td><td>Swarm-AI targeting lists (“Lavender”)</td></tr>
+        <tr><td><strong>IAI</strong> (IL)</td><td>Harop drones, Arrow-3</td><td>$5.5 B</td><td>Real-time strike data fusion</td></tr>
+        <tr><td><strong>Leonardo</strong> (IT)</td><td>F-35 wings, EW pods</td><td>$15 B</td><td>Parts for every 5th F-35 sortie</td></tr>
+      </tbody>
+    </table>
+    <p style="margin-top:1rem"><em>Israel became the 8th largest arms exporter (2020-24) while using Gaza as a live-fire laboratory.</em></p>
+  </div>
+</section>
+
+<!-- Slide 4 ----------------------------------------------------- TECH --------- -->
+<section class="slide">
+  <div class="card">
+    <h2>2. Big Tech – Cloud, AI & Surveillance</h2>
+    <div class="grid cols-2">
+      <div>
+        <h3>Project Nimbus ($1.2 B)</h3>
+        <ul>
+          <li><strong>Google + Amazon</strong> – sovereign cloud in Israel, Ministry of Defense workloads.</li>
+          <li><strong>Microsoft Azure</strong> – overflow capacity after IDF cloud crashed Oct-23.</li>
+          <li><strong>Palantir</strong> – AI targeting (“Gospel”, “Where’s Daddy?”) + predictive-policing dashboards.</li>
+        </ul>
+        <p>All three firms host biometric databases used to control 5 million Palestinians.</p>
+      </div>
+      <div class="chart-container">
+        <canvas id="techChart"></canvas>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Slide 5 ----------------------------------------------------- MACHINERY ---- -->
+<section class="slide">
+  <div class="card">
+    <h2>3. Heavy Machinery – Erasing Gaza’s Landscape</h2>
+    <table>
+      <thead><tr><th>Company & HQ</th><th>Equipment</th><th>Units Supplied</th><th>Destruction Metrics</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Caterpillar</strong> (US)</td><td>Armored D9 bulldozers</td><td>450+</td><td>70 % of structures in Gaza</td></tr>
+        <tr><td><strong>HD Hyundai</strong> (KR)</td><td>HX-series excavators</td><td>180</td><td>Rafah & Jabalia flattening</td></tr>
+        <tr><td><strong>Volvo</strong> (SE)</td><td>L150H wheel loaders</td><td>220</td><td>Colony road-building</td></tr>
+      </tbody>
+    </table>
+    <p style="margin-top:1rem">Caterpillar renewed a multi-million $ contract with Israel in 2025 despite 20 yrs of evidence of extrajudicial demolitions.</p>
+  </div>
+</section>
+
+<!-- Slide 6 ----------------------------------------------------- ENERGY ------- -->
+<section class="slide">
+  <div class="card">
+    <h2>4. Energy – Fuelling Siege & Annexation</h2>
+    <ul>
+      <li><strong>Chevron</strong> (US) – Leviathan & Tamar gas fields → 70 % of Israeli power; paid Israel <strong>$453 M</strong> royalties in 2023.</li>
+      <li><strong>BP</strong> (UK) – March 2025 exploration licences over Palestinian maritime zones.</li>
+      <li><strong>Glencore / Drummond</strong> – 15 coal shipments since Oct-23, powering Israeli grid while Gaza is kept dark.</li>
+    </ul>
+    <div class="chart-container"><canvas id="energyChart"></canvas></div>
+  </div>
+</section>
+
+<!-- Slide 7 ----------------------------------------------------- AGRIBUSINESS -->
+<section class="slide">
+  <div class="card">
+    <h2>5. Agribusiness & Retail – Feeding Annexation</h2>
+    <div class="grid cols-2">
+      <div>
+        <h3>Tnuva (IL → CN Bright Food)</h3>
+        <ul>
+          <li>Sources dairy from 97 illegal outposts</li>
+          <li>Controls 70 % Israeli dairy market</li>
+          <li>Gaza dairy losses: <strong>$43 M</strong> since 2014</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Global Retail</h3>
+        <ul>
+          <li><strong>Amazon / Carrefour</strong> – direct shipping to colonies; free delivery to settlers, none to Palestinians.</li>
+          <li><strong>Maersk</strong> – container line lists “West Bank settlements” as Israel on bills of lading.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Slide 8 ----------------------------------------------------- FINANCE ------ -->
+<section class="slide">
+  <div class="card">
+    <h2>6. Finance – The Bond Market of Genocide</h2>
+    <table>
+      <thead><tr><th>Institution & HQ</th><th>Instrument</th><th>2023-24 Exposure</th><th>Destination</th></tr></thead>
+      <tbody>
+        <tr><td><strong>BlackRock</strong> (US)</td><td>Israeli gov. bonds, ETF holdings</td><td>$68 M bonds + $2.3 B equity stakes</td><td>Lockheed, Palantir, Caterpillar</td></tr>
+        <tr><td><strong>Vanguard</strong> (US)</td><td>Passive index funds</td><td>$546 M bonds + $3.1 B equity</td><td>Elbit, Chevron, Microsoft</td></tr>
+        <tr><td><strong>BNP Paribas</strong> (FR)</td><td>Underwriting syndicate</td><td>$8.2 B</td><td>Israeli treasury</td></tr>
+        <tr><td><strong>Barclays</strong> (UK)</td><td>Lead manager</td><td>$5 B</td><td>Settlement-linked corporates</td></tr>
+      </tbody>
+    </table>
+    <p style="margin-top:1rem">Norway’s Government Pension Fund alone holds $121.5 B in complicit companies <em>(↑32 % since Oct-23)</em>.</p>
+  </div>
+</section>
+
+<!-- Slide 9 ----------------------------------------------------- UNIVERSITIES -->
+<section class="slide">
+  <div class="card">
+    <h2>7. Universities – R&D for Apartheid</h2>
+    <ul>
+      <li><strong>MIT</strong> – Israeli Ministry of Defense funded drone-swarm AI; Lockheed seed-fund 2019-24.</li>
+      <li><strong>Technion</strong> – partners with Elbit on facial-recognition check-points.</li>
+      <li><strong>Edinburgh U</strong> – £25.5 M direct stakes in Alphabet, Amazon, Microsoft, IBM.</li>
+      <li><strong>TU Munich</strong> – €11.47 M Horizon-Europe projects with Israeli defense & IBM Israel.</li>
+    </ul>
+    <p>“Research neutrality” provides intellectual cover and patent pipelines for technologies battle-tested on Palestinians.</p>
+  </div>
+</section>
+
+<!-- Slide 10 ---------------------------------------------------- LEGAL -------->
+<section class="slide">
+  <div class="card">
+    <h2>8. Legal Landscape – No More Excuses</h2>
+    <ul>
+      <li><strong>ICJ 19 Jul 2024:</strong> Israel’s entire presence in OPT is <em>per se illegal</em>.</li>
+      <li><strong>ICJ Jan 2024:</strong> Provisional measures – “prevent genocide”.</li>
+      <li><strong>ICC Nov 2024:</strong> Arrest warrants for Netanyahu & Gallant (war crimes).</li>
+      <li><strong>Genocide Convention Art 1:</strong> States & non-state actors must <strong>prevent & punish</strong>.</li>
+      <li>Corporate HRDD laws (EU CS3D, FR Duty of Vigilance, DE Supply-Chain Act) now create civil & criminal liability for executives.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Slide 11 ---------------------------------------------------- RECOMMEND ---->
+<section class="slide">
+  <div class="card">
+    <h2>9. Recommendations</h2>
+    <ul>
+      <li>Immediate divestment from all entities listed above.</li>
+      <li>Asset freezes & sanctions on executives under Magnitsky-style regimes.</li>
+      <li>ICC investigations into corporate complicity.</li>
+      <li>Reparations – “Apartheid Wealth Tax” modelled on post-1994 South Africa.</li>
+    </ul>
+    <p style="text-align:center;font-size:1.2rem;margin-top:2rem">
+      <strong>“Business as usual” is business in genocide.</strong>
+    </p>
+  </div>
+</section>
+
+<!-- Navigation dots ----------------------------------------------------------->
+<nav class="nav">
+  <a href="#0" class="active"></a><a href="#1"></a><a href="#2"></a><a href="#3"></a><a href="#4"></a>
+  <a href="#5"></a><a href="#6"></a><a href="#7"></a><a href="#8"></a><a href="#9"></a><a href="#10"></a>
+</nav>
+
+<!-- Scripts ------------------------------------------------------------------->
+<script>
+const dots = document.querySelectorAll('.nav a');
+const slides = document.querySelectorAll('.slide');
+
+const io = new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      const i = Array.from(slides).indexOf(e.target);
+      dots.forEach((d,j)=>d.classList.toggle('active',i===j));
+    }
+  });
+},{threshold:.6});
+slides.forEach(s=>io.observe(s));
+
+/* --- Charts --------------------------------------------------------------- */
+const opt = {responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{ticks:{color:'#888'}},y:{ticks:{color:'#888'}}}};
+new Chart(document.getElementById('casualtyChart'),{type:'bar',data:{labels:['Killed','Injured','Displaced'],datasets:[{data:[45000,134411,1900000],backgroundColor:'#ff3e3e'}]},options:opt});
+new Chart(document.getElementById('techChart'),{type:'doughnut',data:{labels:['Google','Amazon','Microsoft','Palantir'],datasets:[{data:[1200,1200,800,500],backgroundColor:['#ff3e3e','#ff7b7b','#ffaaaa','#ffdddd']}]},options:opt});
+new Chart(document.getElementById('energyChart'),{type:'line',data:{labels:['Jan-23','Apr-23','Jul-23','Oct-23','Jan-24','Apr-24'],datasets:[{label:'Coal (k t)',data:[1200,1300,1350,1800,1900,2100],borderColor:'#ff3e3e',fill:false}]},options:opt});
+</script>
+</body>
+</html>
